@@ -7,13 +7,20 @@ h1 {
 }
 
 .initscreen {
+  z-index: 100;
   position: fixed;
   text-align: center;
-  line-height: 110vh;
-  z-index: 100;
+  line-height: 100vh;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgb(30, 30, 30);
+}
+
+.initimg{
+  position: relative;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: white;
 }
