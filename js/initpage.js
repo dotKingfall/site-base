@@ -12,3 +12,8 @@ function showTooltip(n){
     ttp.style.transitionDuration = "1s";
   }
 }
+
+function homepage(){
+  document.documentElement.style.backgroundColor = "#fff"
+  document.getElementById("initpage").textContent = ''
+}
