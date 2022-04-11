@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+body{
+  background-color: rgb(30, 30, 30);
+}
+
 .outerinitimg{
   text-align: center;
-  padding: 30vh;
+  padding: 20vh;
 }
 
 .initimg{
+  margin-top: 55px;
   --gstart: 0deg;
   border: 1vmin solid;
   border-image: conic-gradient(from var(--gstart), rgb(179, 102, 204), rgb(191, 64, 191), rgb(60, 40, 80)) 1;
@@ -12,7 +19,23 @@
   transition-duration: 1s;
 }
 
-@keyframes gradient {
+#tooltip {
+  opacity: 0%;
+  color: white;
+  font-family:'Stint Ultra Condensed';
+  font-size: xx-large;
+  width: 120px;
+  margin: auto;
+  transition: opacity;
+  transition-duration: 2s;
+}
+
+.initimg:hover{
+  background-color: rgb(20, 20, 20);
+  box-shadow: 5px 10px 15px rgba(255, 0, 255, 0.4);
+}
+
+@keyframes gradient{
   to{
     --gstart: -360deg;
   }
@@ -22,21 +45,4 @@
   syntax: '<angle>';
   initial-value: 180deg;
   inherits: false;
-}
-
-.outerinitimg .tooltip {
-  visibility: hidden;
-  width: 120px;
-  color: white;
-  background-color: rgba(153, 50, 204, 1.0);
-  text-align: start;
-  border-radius: 7px;
-  position: relative;
-  padding: 10px;
-  text-align: center;
-}
-
-.initimg:hover{
-  background-color: rgb(20, 20, 20);
-  box-shadow: 5px 10px 15px rgba(255, 0, 255, 0.4);
 }
