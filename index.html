@@ -8,17 +8,15 @@
   <link rel="stylesheet" href="style/mainpage.css">
   <script type="text/javascript" src="js/initpage.js"></script>
 
-  <style>
-    body{
-      background-color: rgb(30, 30, 30);
-      overflow: hidden;
-    }
-  </style>
-
   <title>HearMe</title>
 </head>
 <body>
-  <div class="outerinitimg">
-    <input type="image" class="initimg" src="img/indexbutton.svg" name="Play" width="120" height="120">
+  <div id="tooltipback">
+    <div class="outerinitimg">
+      <div id="tooltip">Escutar agora</div>
+      <input type="image" class="initimg" src="img/indexbutton.svg" name="Play" width="120" height="120"
+      onmouseover="showTooltip(1)" onmouseout="showTooltip(0)">
+    </div>
+  </div>
 </body>
 </html>
