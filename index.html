@@ -1,82 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style/mainpage.css">
-  <link rel="stylesheet" href="style/homepage.css">
   <script type="text/javascript" src="js/initpage.js"></script>
-  <script type="text/javascript" src="js/homepage.js"></script>
 
   <title>HearMe</title>
 </head>
-<body>
-  <audio src="music.mp3" controls autoplay loop>
-
-  </audio>
-  
+<body onbeforeunload="homepage(1)">
   <div id="initpage">
-     
+    <div class="audio">
+      <audio controls autoplay>
+        <source src="music.mp3" type="audio/mp3">
+      </audio>
+    </div>
     <div id="tooltip">Escutar agora</div>
       <input type="image" class="initimg" src="img/indexbutton.svg" name="Play" width="120" height="120"
       onmouseover="showTooltip(1)" onmouseout="showTooltip(0)" onclick="homepage()">
   </div>
-  <div id="homepage">
-    <div>Gostaria bastante de que minha página estivesse funcionando</div>
-    <div>Ó Deus, porque não dá autoplay pra mim?</div>
-    <div>Eu gosto de torta</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-    <div>aaaaaaaaaaaaaaaaaaaaa</div>
-  </div>
-
 </body>
 </html>
