@@ -7,16 +7,15 @@
 
   <link rel="stylesheet" href="style/mainpage.css">
   <script type="text/javascript" src="js/initpage.js"></script>
+  <script type="text/javascript">
+    var bgm = Audio('music.mp3');
+    bgm.play();
+  </script>
 
   <title>HearMe</title>
 </head>
 <body onbeforeunload="homepage(1)">
   <div id="initpage">
-    <div class="audio">
-      <audio controls loop autoplay src="music.mp3">
-        <source src="music.mp3" type="audio/mpeg">
-      </audio>
-    </div>
     <div id="tooltip">Escutar agora</div>
       <input type="image" class="initimg" src="img/indexbutton.svg" name="Play" width="120" height="120"
       onmouseover="showTooltip(1)" onmouseout="showTooltip(0)" onclick="homepage()">
