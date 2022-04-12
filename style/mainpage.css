@@ -34,7 +34,7 @@ body{
 }
 
 .initimg:hover{
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(25, 25, 18);
   box-shadow: 5px 10px 15px rgba(255, 0, 255, 0.4);
 }
 
