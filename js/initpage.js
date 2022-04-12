@@ -14,5 +14,10 @@ function showTooltip(n){
 }
 
 function homepage(){
-  document.getElementById("initpage").textContent = ''
+  var hp = document.getElementById("homepage");
+  document.getElementById("initpage").style.display = "none";
+  document.body.style.overflow = "visible";
+
+  hp.style.position = "static";
+  hp.style.visibility = "visible";
 }
