@@ -13,7 +13,9 @@
 <body onbeforeunload="homepage(1)">
   <div id="initpage">
     <div class="audio">
-      <audio autoplay="true" src="music.mp3"></audio>
+      <audio controls loop autoplay src="music.mp3">
+        <source src="music.mp3" type="audio/mpeg">
+      </audio>
     </div>
     <div id="tooltip">Escutar agora</div>
       <input type="image" class="initimg" src="img/indexbutton.svg" name="Play" width="120" height="120"
