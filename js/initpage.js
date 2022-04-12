@@ -14,6 +14,6 @@ function showTooltip(n){
 }
 
 function homepage(){
-  document.documentElement.style.backgroundColor = "#fff"
+  document.documentElement.style.backgroundColor = "#483D8B"
   document.getElementById("initpage").textContent = ''
 }
