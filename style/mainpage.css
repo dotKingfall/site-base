@@ -8,6 +8,7 @@ body{
 #initpage{
   text-align: center;
   padding: 20vh;
+  transition: opacity 1s;
 }
 
 .audio{
@@ -22,11 +23,6 @@ body{
   animation: 9s gradient linear infinite;
   transition-property: box-shadow, background-color;
   transition-duration: 1s;
-}
-
-#homepage{
-  position: absolute;
-  visibility: hidden;
 }
 
 #tooltip {
