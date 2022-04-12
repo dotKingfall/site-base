@@ -21,6 +21,4 @@ function homepage(){
 
   hp.style.position = "static";
   hp.style.visibility = "visible";
-
-  window.setInterval(function (){window.scrollBy(0, 10)}, 10);
 }
