@@ -10,6 +10,10 @@ body{
   padding: 20vh;
 }
 
+.audio{
+  position: absolute;
+}
+
 .initimg{
   margin-top: 55px;
   --gstart: 0deg;
