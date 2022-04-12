@@ -13,24 +13,9 @@ function showTooltip(n){
   }
 }
 
-function autoScroll(times){
-  var tmp = setInterval(function (){
-    if(times <= 0) clearInterval(tmp);
-    window.scrollBy(0, 10);
-    times--;
-  }, 10);
-}
-
 function homepage(){
-  var hp = document.getElementById("homepage");
-
-  hp.style.position = "static";
-  hp.style.visibility = "visible";
-
-  autoScroll(47);
-
-  setTimeout(function (){
-    document.getElementById("initpage").style.display = "none";
-    document.body.style.overflow = "visible";
-  }, 700);
+  document.getElementById("initpage").style.opacity = "0%";
+  window.setTimeout(function(){
+    window.location.href = "pages/homepage.html";
+  }, 1300)
 }
