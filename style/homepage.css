@@ -1,1 +1,41 @@
-/*Nada ainda*/
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family:'Stint Ultra Condensed';
+  background-color: rgb(30, 30, 30);
+}
+
+button{
+  border: none;
+}
+
+ul{
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
+li{
+  padding-left: 2em;
+  list-style: none;
+  float: left;
+  border: none;
+  outline: none;
+}
+
+.tabOption{
+  font-family:'Stint Ultra Condensed';
+  background-color: rgb(15, 15, 15);
+  letter-spacing: 1px;
+  display: block;
+  color: white;
+  font-size: 28px;
+  height: 1.7em;
+  cursor: pointer;
+}
+
+.tabOption:hover{
+  text-decoration: underline dotted rgba(255, 0, 255, .6);
+}
