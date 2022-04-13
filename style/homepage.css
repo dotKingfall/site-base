@@ -4,7 +4,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family:'Stint Ultra Condensed';
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(255, 255, 255);
 }
 
 button{
@@ -17,7 +17,7 @@ ul{
   margin: 0 auto;
 }
 
-li{
+td{
   padding-left: 2em;
   list-style: none;
   float: left;
@@ -38,4 +38,18 @@ li{
 
 .tabOption:hover{
   text-decoration: underline dotted rgba(255, 0, 255, .6);
+}
+
+img{
+  width: 200px;
+  height: 200px;
+
+}
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+}
+i{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: small;
 }
