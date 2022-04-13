@@ -3,37 +3,32 @@
 body, html {
   height: 100%;
   margin: 0;
+  padding: 0;
   font-family:'Stint Ultra Condensed';
-  background-color: rgb(255, 255, 255);
-}
-
-button{
-  border: none;
+  background-color: rgb(30, 30, 30);
 }
 
 ul{
-  display: table;
-  text-align: center;
-  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-td{
-  padding-left: 2em;
-  list-style: none;
+li{
   float: left;
-  border: none;
-  outline: none;
+  margin: 0;
 }
 
 .tabOption{
   font-family:'Stint Ultra Condensed';
   background-color: rgb(15, 15, 15);
   letter-spacing: 1px;
-  display: block;
   color: white;
+  border: none;
   font-size: 28px;
   height: 1.7em;
   cursor: pointer;
+  width: 20vw;
 }
 
 .tabOption:hover{
@@ -41,15 +36,18 @@ td{
 }
 
 img{
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
 
 }
 h2{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
+  color: #eee;
 }
 i{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: small;
+  color: #eee;
 }
+
