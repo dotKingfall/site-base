@@ -1,1 +1,3 @@
-//Nada ainda
+function gotoPage(pageid, element){
+  //
+}
