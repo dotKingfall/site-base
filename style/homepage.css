@@ -44,7 +44,7 @@ li{
   cursor: pointer;
   /*text-decoration: underline rgb(179, 102, 204);*/
   transition-property: transform, opacity;
-  transition-duration: .2s;
+  transition-duration: .3s;
 }
 
 .tabOptionHover{
@@ -60,7 +60,7 @@ li{
   height: 1.7em;
   width: 20vw;
   transition-property: transform, opacity;
-  transition-duration: .2s;
+  transition-duration: .3s;
   opacity: 0%;
 }
 
