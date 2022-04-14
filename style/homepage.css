@@ -21,11 +21,15 @@ ul{
   padding: 0;
   margin: 0;
   position: absolute;
+  border-style: none solid ridge none;
+  border-color: rgb(179, 102, 204);
+  border-radius: 0px 0px 3px 0px;
 }
 
 li{
   float: left;
   margin: 0;
+  display: block;
 }
 
 .tabOption{
@@ -34,9 +38,40 @@ li{
   letter-spacing: 1px;
   color: white;
   border: none;
-  font-size: 4vh;
+  font-size: 1.8vmax;
   height: 1.7em;
+  width: 20vw;
   cursor: pointer;
+  /*text-decoration: underline rgb(179, 102, 204);*/
+  transition-property: transform, opacity;
+  transition-duration: .2s;
+}
+
+.tabOptionHover{
+  position: absolute;
+  transform: rotateY(180deg);
+  font-family:'Stint Ultra Condensed';
+  background-color: rgb(179, 102, 204);
+  letter-spacing: 1px;
+  color: white;
+  float: left;
+  border: none;
+  font-size: 1.8vmax;
+  height: 1.7em;
+  width: 20vw;
+  transition-property: transform, opacity;
+  transition-duration: .2s;
+  opacity: 0%;
+}
+
+li:hover .tabOption{
+  transform: rotateY(180deg);
+  opacity: 0%;
+}
+
+li:hover .tabOptionHover{
+  transform: rotateY(360deg);
+  opacity: 100%;
 }
 
 h2{
