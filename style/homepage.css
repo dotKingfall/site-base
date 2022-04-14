@@ -29,6 +29,7 @@ li{
   height: 1.7em;
   cursor: pointer;
   width: 20vw;
+  transition-property: background-color, color;
 }
 
 .tabOption:hover{
