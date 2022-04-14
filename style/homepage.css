@@ -19,6 +19,10 @@ li{
   margin: 0;
 }
 
+li:hover .tabOption{
+  background-color: rgba(255, 0, 255, .4);
+}
+
 .tabOption{
   font-family:'Stint Ultra Condensed';
   background-color: rgb(15, 15, 15);
@@ -30,10 +34,7 @@ li{
   cursor: pointer;
   width: 20vw;
   transition-property: background-color, color;
-}
-
-.tabOption:hover{
-  text-decoration: underline dotted rgba(255, 0, 255, .6);
+  transition-duration: .5s;
 }
 
 img{
