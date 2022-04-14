@@ -16,10 +16,30 @@
 </head>
 <body>
   <ul>
-    <li><button class="tabOption" id="hpg" onclick="gotoPage('hpg', this)">Página Inicial</button></li>
-    <li><button class="tabOption" id="dsb" onclick="gotoPage('dsb', this)">Descobrir</button></li>
-    <li><button class="tabOption" id="you" onclick="gotoPage('you', this)">Você</button></li>
-    <li><button class="tabOption" id="abt" onclick="gotoPage('abt', this)">Sobre</button></li>
+    <li id="hpg" onclick="gotoPage('hpg', this)">
+      <span>
+        <button class="tabOptionHover">Página Inicial</button>
+        <button class="tabOption">Página Inicial</button>
+      </span>
+    </li>
+    <li id="dsb" onclick="gotoPage('dsb', this)">
+      <span>
+        <button class="tabOptionHover">Descobrir</button>
+        <button class="tabOption">Descobrir</button>
+      </span>
+    </li>
+    <li id="you" onclick="gotoPage('you', this)">
+      <span>
+        <button class="tabOptionHover">Você</button>
+        <button class="tabOption">Você</button>
+      </span>
+    </li>
+    <li id="abt" onclick="gotoPage('abt', this)">
+      <span>
+        <button class="tabOptionHover">Sobre</button>
+        <button class="tabOption">Sobre</button>
+      </span>
+    </li>
   </ul>
   <!--<img src="../img/alec-benjamin.jpeg" width="130px" height="130px">
   <div class="descricao">
