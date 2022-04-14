@@ -5,21 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/479897f88c.js" crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="../js/homepage.js"></script>
   <link rel="stylesheet" href="../style/homepage.css">
+  <script type="text/javascript">
+    document.getElementById("hpg").click();
+  </script>
 
   <title>HearMe - Homepage</title>
 </head>
 <body>
   <ul>
-    <li><button class="tabOption">Teste1</button></li>
-    <li><button class="tabOption">Teste2</button></li>
-    <li><button class="tabOption">Teste3</button></li>
-    <li><button class="tabOption">Teste4</button></li>
-    <li><button class="tabOption">Teste5</button></li>
+    <li><button class="tabOption" id="hpg" onclick="gotoPage('hpg', this)">Página Inicial</button></li>
+    <li><button class="tabOption" id="dsb" onclick="gotoPage('dsb', this)">Descobrir</button></li>
+    <li><button class="tabOption" id="you" onclick="gotoPage('you', this)">Você</button></li>
+    <li><button class="tabOption" id="abt" onclick="gotoPage('abt', this)">Sobre</button></li>
   </ul>
-
-  <img src="../img/alec-benjamin.jpeg">
+  <!--<img src="../img/alec-benjamin.jpeg" width="130px" height="130px">
   <div class="descricao">
     <h2>Stan - Cover</h2>
     <i>Alec Benjamin</i>
@@ -43,7 +45,6 @@
 
     <audio src="../music/music.mp3"></audio>
     
-  </div>
-
+  </div>-->
 </body>
 </html>
