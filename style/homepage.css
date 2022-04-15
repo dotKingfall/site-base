@@ -8,14 +8,6 @@ body, html {
   background-color: rgb(30, 30, 30);
 }
 
-/*::-webkit-scrollbar{
-  width: 13px;
-}
-
-::-webkit-scrollbar-thumb{
-  background: rgba(191, 64, 191, .8);
-}*/
-
 ul{
   list-style-type: none;
   padding: 0;
@@ -24,6 +16,7 @@ ul{
   border-style: none solid ridge none;
   border-color: rgb(179, 102, 204);
   border-radius: 0px 0px 3px 0px;
+  background-image: linear-gradient(to right, black , rgb(15, 15, 15));
 }
 
 li{
@@ -34,7 +27,7 @@ li{
 
 .tabOption{
   font-family:'Stint Ultra Condensed';
-  background-color: rgb(15, 15, 15);
+  background-image: linear-gradient(to right, black , rgb(15, 15, 15));
   letter-spacing: 1px;
   color: white;
   border: none;
@@ -42,36 +35,13 @@ li{
   height: 1.7em;
   width: 20vw;
   cursor: pointer;
-  /*text-decoration: underline rgb(179, 102, 204);*/
-  transition-property: transform, opacity;
+  transition-property: transform, background-image;
   transition-duration: .3s;
 }
 
-.tabOptionHover{
-  position: absolute;
-  transform: rotateY(180deg);
-  font-family:'Stint Ultra Condensed';
-  background-color: rgb(179, 102, 204);
-  letter-spacing: 1px;
+.workablescreen{
+  padding-top: 3em;
   color: white;
-  float: left;
-  border: none;
-  font-size: 1.8vmax;
-  height: 1.7em;
-  width: 20vw;
-  transition-property: transform, opacity;
-  transition-duration: .3s;
-  opacity: 0%;
-}
-
-li:hover .tabOption{
-  transform: rotateY(180deg);
-  opacity: 0%;
-}
-
-li:hover .tabOptionHover{
-  transform: rotateY(360deg);
-  opacity: 100%;
 }
 
 h2{
