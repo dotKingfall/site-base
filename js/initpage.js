@@ -19,5 +19,5 @@ function homepage(){
   
   window.setTimeout(function(){
     window.location.href = "wscreen.html";
-  }, 1300)
+  }, 1300);
 }
