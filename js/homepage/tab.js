@@ -28,12 +28,13 @@ function gotoPage(pageid){
   }
 }
 
-function te(id, n, element){
+function te(id, n, element, px){
   var element = element.children;
 
   if(id != currentTab)
   {
     if(n == 1){
+      //incluir underline
       element[0].style.transform = "rotateY(180deg) rotateY(180deg)";
     }
     else if(n == 0){
