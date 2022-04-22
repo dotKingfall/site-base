@@ -34,6 +34,10 @@ body, html {
   padding-top: 1vmax;
 }
 
+.tabName{
+  transition: transform .3s;
+}
+
 .separator{
   border-right: .4vmax solid rgb(191, 64, 191);
   height: 3.5vmax;
