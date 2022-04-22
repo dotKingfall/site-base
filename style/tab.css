@@ -47,6 +47,20 @@ body, html {
   position: absolute;
 }
 
+.underline{
+  /*Fazer a underline aparecer, transform, etc.*/
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  border-top: solid rgb(191, 64, 191);
+  width: 10px;
+  border-radius: 12px;
+  position: absolute;
+  transition-timing-function: ease-out;
+  transform-origin: center right;
+  transition: width .6s;
+}
+
 .logo{
   height: 4.4vmax;
   width: 4.2vmax;
