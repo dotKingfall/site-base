@@ -25,11 +25,21 @@ body, html {
   font-family:'Stint Ultra Condensed';
   text-align: center;
   color: white;
-  float: left;
   letter-spacing: 1px;
   font-size: 1.8vmax;
   cursor: pointer;
   height: 4.4vmax;
+  float: left;
+  padding-left: 8px;
+}
+
+.separator{
+  border-right: 6px solid rgb(191, 64, 191);
+  height: 3.5vmax;
+  margin-top: .45vmax;
+  margin-left: 3.7vmax;
+  float: left;
+  position: absolute;
 }
 
 .logo{
@@ -39,7 +49,7 @@ body, html {
   margin: 0;
   padding: 0;
   float: left;
-  transition: background-color 1s;
+  transition: background-color .6s;
 }
 
 .logo:hover{
