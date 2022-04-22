@@ -16,7 +16,8 @@ body, html {
 }
 
 #workablescreen{
-
+  height: 100%;
+  width: 100%;
 }
 
 .tabOption{
