@@ -6,65 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/479897f88c.js" crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="../js/homepage.js"></script>
-  <link rel="stylesheet" href="../style/homepage.css">
-  <script type="text/javascript">
-    document.getElementById("hpg").click();
-  </script>
+  <script type="text/javascript" src="../js/homepage/tab.js"></script>
+  <link rel="stylesheet" href="../style/homepage/tab.css">
+  <link rel="stylesheet" href="../style/homepage/player.css">
 
   <title>HearMe - Homepage</title>
 </head>
 <body>
-  <ul>
-    <li onclick="gotoPage('hpg', this);" onmouseover="tabEffect(this, 1)" onmouseout="tabEffect(this, 0)">
-      <button class="tabOption">Página Inicial</button>
-    </li>
-    <li onclick="gotoPage('dsb', this);" onmouseover="tabEffect(this, 1)" onmouseout="tabEffect(this, 0)">
-      <button class="tabOption">Descobrir</button>
-    </li>
-    <li onclick="gotoPage('you', this);" onmouseover="tabEffect(this, 1)" onmouseout="tabEffect(this, 0)">
-      <button class="tabOption">Você</button>
-    </li>
-    <li onclick="gotoPage('abt', this);" onmouseover="tabEffect(this, 1)" onmouseout="tabEffect(this, 0)">
-      <button class="tabOption">Sobre</button>
-    </li>
-  </ul>
-  <div id="hpg" class="workablescreen">homepage</div>
-  <div id="dsb" class="workablescreen">descobrir
-   
-    
-  
-     <p> <img src="../img/alec-benjamin.jpeg" width="130px" height="130px"></p>
-    <div class="descricao">
-      <h2>Stan - Cover</h2>
-      <i>Alec Benjamin</i>
-  
-    </div>
-    <div class="duracao">
-      <div class="barra">
-        <progress value="0.5" max="1"></progress>
-      </div>
-      <div class="tempo">
-        <p class="inicio">0:00</p>
-        <p class="fim">3:22</p>
-      </div>
-    </div>
-    <div class="player">
-      <i class="fa-solid fa-backward-step"></i>
-      <i class="fa-solid fa-play"></i>
-      <i class="fa-solid fa-pause"></i>
-      <i class="fa-solid fa-forward-step"></i>
-      
-  
-      <audio src="../music/music.mp3"></audio>
-      
-    </div>
-    <p><img src="../img/alec-benjamin.jpeg" height="130px" width="130px"</p>
+  <img src="../img/indexbutton.svg" class="logo">
+  <div id="tabs">
+    <div onclick="gotoPage('#hpg', this)" class="tabOption"><div>Página Inicial</div></div>
+    <div onclick="gotoPage('#dsb', this)" class="tabOption"><div>Descobrir</div></div>
+    <div onclick="gotoPage('#you', this)" class="tabOption"><div>Você</div></div>
+    <div onclick="gotoPage('#abt', this)" class="tabOption"><div>Sobre</div></div>
   </div>
 
+  <div id="workablescreen">
+    <div id="hpg">homepage</div>
+    <div id="dsb">descobrir
+       <p> <img src="../img/alec-benjamin.jpeg" width="130px" height="130px"></p>
+      <div class="descricao">
+        <h2>Stan - Cover</h2>
+        <i>Alec Benjamin</i>
+    
+      </div>
+      <div class="duracao">
+        <div class="barra">
+          <progress value="0.5" max="1"></progress>
+        </div>
+        <div class="tempo">
+          <p class="inicio">0:00</p>
+          <p class="fim">3:22</p>
+        </div>
+      </div>
+      <div class="player">
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-pause"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        
+    
+        <audio src="../music/music.mp3"></audio>
+        
+      </div>
+      <p><img src="../img/alec-benjamin.jpeg" height="130px" width="130px"</p>
+    </div>
   
-  <div id="you" class="workablescreen">voceh</div>
-  <div id="abt" class="workablescreen">sobre</div>
+    <div id="you">voceh</div>
+    <div id="abt">sobre</div>
+  </div>
 
 </body>
 </html>
