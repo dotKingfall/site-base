@@ -17,5 +17,6 @@ function homepage(){
   document.getElementById("initpage").style.opacity = "0%";
   window.setTimeout(function(){
     window.location.href = "pages/homepage.html";
+    //document.getElementById("workablescreen").innerHTML = 
   }, 1300)
 }
