@@ -31,10 +31,11 @@ body, html {
   height: 4.4vmax;
   float: left;
   padding-left: 8px;
+  padding-top: 1vmax;
 }
 
 .separator{
-  border-right: 6px solid rgb(191, 64, 191);
+  border-right: .4vmax solid rgb(191, 64, 191);
   height: 3.5vmax;
   margin-top: .45vmax;
   margin-left: 3.7vmax;
