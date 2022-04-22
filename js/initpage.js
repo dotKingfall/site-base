@@ -14,9 +14,10 @@ function showTooltip(n){
 }
 
 function homepage(){
-  document.getElementById("initpage").style.opacity = "0%";
+  var tmp = document.getElementById("initpage");
+  tmp.style.opacity = "0%";
+  
   window.setTimeout(function(){
-    window.location.href = "pages/homepage.html";
-    //document.getElementById("workablescreen").innerHTML = 
+    window.location.href = "wscreen.html";
   }, 1300)
 }
