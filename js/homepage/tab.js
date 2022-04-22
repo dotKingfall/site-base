@@ -1,35 +1,47 @@
+var currentTab = 99;
+
 function gotoPage(pageid){
   var ws = document.getElementById("workablescreen");
+  //var tabs = document.getElementById("tabs");
+
   
   switch(pageid){
     case 2: //descobrir
+      currentTab = 2;
       ws.innerHTML = "<object data='pages/descobrir.html' width='100%' height='100%'></object>";
       break;
 
     case 3: //você
+      currentTab = 3;
       ws.innerHTML = "<object type='text/html' data='pages/voce.html' width='100%' height='100%'></object>";
       break;
 
     case 4: //sobre
+      currentTab = 4;
       ws.innerHTML = "<object type='text/html' data='pages/sobre.html' width='100%' height='100%'></object>";
       break;
 
     default: //homepage
+      currentTab = 1;
       ws.innerHTML = "<object data='pages/homepage.html' width='100%' height='100%'></object>";
       break;
   }
 }
 
-function tabEffect(element, n){
-  element = element.children[0];
+function te(id, n, element){
+  var element = element.children;
 
-  if(n == 1){
-    element.style.transform = "rotateY(180deg) rotateY(180deg)";
-    element.style.backgroundImage = "linear-gradient(to right, black , rgb(15, 15, 15), black)";
+  if(id != currentTab)
+  {
+    if(n == 1){
+      element[0].style.transform = "rotateY(180deg) rotateY(180deg)";
+    }
+    else if(n == 0){
+      element[0].style.transform = "rotateY(-180deg) rotateY(180deg)";
+    }
   }
-  else if(n == 0){
-    element.style.transform = "rotateY(-180deg) rotateY(180deg)";
-    element.style.backgroundImage = "linear-gradient(to right, black , rgb(15, 15, 15), black)";
+  else{
+    element[0].style.transform = "rotateY(0deg) rotateY(0deg)";
   }
 }
 
