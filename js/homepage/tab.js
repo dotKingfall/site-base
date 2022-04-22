@@ -5,19 +5,19 @@ function gotoPage(pageid){
   
   switch(pageid){
     case 2:
-      ws.innerHTML = "<object type='text/html' data='pages/descobrir.html'></object>";
+      ws.innerHTML = "<object data='pages/descobrir.html' width='100%' height='100%'></object>";
       break;
 
     case 3:
-      ws.innerHTML = "<object type='text/html' data='pages/voce.html'></object>";
+      ws.innerHTML = "<object type='text/html' data='pages/voce.html' width='100%' height='100%'></object>";
       break;
 
     case 4:
-      ws.innerHTML = "<object type='text/html' data='pages/sobre.html'></object>";
+      ws.innerHTML = "<object type='text/html' data='pages/sobre.html' width='100%' height='100%'></object>";
       break;
 
     default:
-      ws.innerHTML = "<object type='text/html' data='pages/homepage.html'></object>";
+      ws.innerHTML = "<object data='pages/homepage.html' width='100%' height='100%'></object>";
       break;
   }
 }
