@@ -23,14 +23,13 @@ body, html {
 
 .tabOption{
   font-family:'Stint Ultra Condensed';
-  text-align: center;
   color: white;
   letter-spacing: 1px;
   font-size: 1.8vmax;
   cursor: pointer;
   height: 4.4vmax;
   float: left;
-  padding-left: 8px;
+  padding-left: 2vmax;
   padding-top: 1vmax;
 }
 
@@ -48,12 +47,10 @@ body, html {
 }
 
 .underline{
-  /*Fazer a underline aparecer, transform, etc.*/
   margin: 0;
   padding: 0;
-  text-align: right;
   border-top: solid rgb(191, 64, 191);
-  width: 10px;
+  width: 0px;
   border-radius: 12px;
   position: absolute;
   transition-timing-function: ease-out;
