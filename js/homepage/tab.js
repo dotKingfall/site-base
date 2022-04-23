@@ -2,29 +2,37 @@ var currentTab = 99;
 
 function gotoPage(pageid){
   var ws = document.getElementById("workablescreen");
-  //var tabs = document.getElementById("tabs");
+  var tabs = document.getElementsByClassName("tabOption");
 
-  
   switch(pageid){
-    case 2: //descobrir
-      currentTab = 2;
+    case 1: //descobrir
+      currentTab = 1;
       ws.innerHTML = "<object data='pages/descobrir.html' width='100%' height='100%'></object>";
       break;
 
-    case 3: //você
-      currentTab = 3;
+    case 2: //você
+      currentTab = 2;
       ws.innerHTML = "<object type='text/html' data='pages/voce.html' width='100%' height='100%'></object>";
       break;
 
-    case 4: //sobre
-      currentTab = 4;
+    case 3: //sobre
+      currentTab = 3;
       ws.innerHTML = "<object type='text/html' data='pages/sobre.html' width='100%' height='100%'></object>";
       break;
 
     default: //homepage
-      currentTab = 1;
+      currentTab = 0;
       ws.innerHTML = "<object data='pages/homepage.html' width='100%' height='100%'></object>";
       break;
+  }
+
+  for(i = 0; i < tabs.length; i++){
+    if(currentTab == i){
+      
+    }
+    else{
+      tabs[i].children[1].style.width = "0";
+    }
   }
 }
 
@@ -34,19 +42,18 @@ function te(id, n, element, px){
   if(id != currentTab)
   {
     if(n == 1){
-      //incluir underline
       element[0].style.transform = "rotateY(180deg) rotateY(180deg)";
+      element[1].style.width = px;
     }
     else if(n == 0){
       element[0].style.transform = "rotateY(-180deg) rotateY(180deg)";
+      element[1].style.width = "0";
     }
   }
   else{
     element[0].style.transform = "rotateY(0deg) rotateY(0deg)";
   }
 }
-
-//screenInfo = document.getElementsByClassName("workablescreen");
 //tabOption = document.getElementsByClassName("tabOption");
 
 //for(i = 0; i < screenInfo.length; i++)
