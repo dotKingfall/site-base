@@ -11,7 +11,7 @@ body, html {
 #tabs{
   background-color: black;
   background-image: linear-gradient(to right, black , rgb(15, 15, 15), black);
-  width: 99.3vw;
+  width: 100vw;
   height: 4.4vmax;
   padding-left: 10px;
 }
@@ -34,7 +34,8 @@ body, html {
 }
 
 .tabName{
-  transition: transform .3s;
+  transition-property: transform, color;
+  transition-duration: .3s;
 }
 
 .separator{
