@@ -1,4 +1,10 @@
-var currentTab = 99;
+window.onload = function(){
+  var hp = document.getElementsByClassName("tabOption")[0].children;
+  hp[0].style.color = "rgb(191, 64, 191)";
+  hp[1].style.width = '7vmax';
+  gotoPage(0);
+};
+var currentTab;
 
 function gotoPage(pageid){
   var ws = document.getElementById("workablescreen");
@@ -27,11 +33,9 @@ function gotoPage(pageid){
   }
 
   for(i = 0; i < tabs.length; i++){
-    if(currentTab == i){
-      
-    }
-    else{
+    if(currentTab != i){
       tabs[i].children[1].style.width = "0";
+      tabs[i].children[0].style.color = "white";
     }
   }
 }
@@ -52,16 +56,6 @@ function te(id, n, element, px){
   }
   else{
     element[0].style.transform = "rotateY(0deg) rotateY(0deg)";
+    element[0].style.color = "rgb(191, 64, 191)";
   }
 }
-//tabOption = document.getElementsByClassName("tabOption");
-
-//for(i = 0; i < screenInfo.length; i++)
-//  screenInfo[i].style.display = "none";
-//for(i = 0; i < tabOption.length; i++){
-//  tabOption[i].style.backgroundImage = "linear-gradient(to right, black , rgb(15, 15, 15), black)";
-//}
-
-//document.getElementById(pageid).style.display = "block";
-//element.style.backgroundImage = "linear-gradient(to right, rgb(191, 64, 191), rgb(179, 102, 204))";
-//lastTab = element;
