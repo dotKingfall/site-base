@@ -34,11 +34,16 @@ function gotoPage(pageid){
       ws.innerHTML = "<object type='text/html' data='pages/auth.html' width='100%' height='100%'></object>";
       break;
 
+    case -2: //ajuda
+      currentTab = 5;
+      ws.innerHTML = "<object type='text/html' data='pages/help.html' width='100%' height='100%'></object>";
+      break;
+
     default: //homepage
       currentTab = 0;
       ws.innerHTML = "<object data='pages/homepage.html' width='100%' height='100%'></object>";
       break;
-  }
+    }
 
   for(i = 0; i < tabs.length; i++){
     if(currentTab != i){
