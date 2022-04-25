@@ -1,14 +1,17 @@
+var currentTab = 0;
+
 window.onload = function(){
   var hp = document.getElementsByClassName("tabOption")[0].children;
   hp[0].style.color = "rgb(191, 64, 191)";
-  hp[1].style.width = '7vmax';
+  document.getElementsByClassName("tabOption")[0].style.fontSize = "2.1vmax";
+  hp[1].style.width = '4em';
   gotoPage(0);
 };
-var currentTab;
 
 function gotoPage(pageid){
   var ws = document.getElementById("workablescreen");
   var tabs = document.getElementsByClassName("tabOption");
+  var altabs = document.getElementsByClassName("compOption");
 
   switch(pageid){
     case 1: //descobrir
@@ -26,6 +29,11 @@ function gotoPage(pageid){
       ws.innerHTML = "<object type='text/html' data='pages/sobre.html' width='100%' height='100%'></object>";
       break;
 
+    case -1: //login
+      currentTab = 4;
+      ws.innerHTML = "<object type='text/html' data='pages/auth.html' width='100%' height='100%'></object>";
+      break;
+
     default: //homepage
       currentTab = 0;
       ws.innerHTML = "<object data='pages/homepage.html' width='100%' height='100%'></object>";
@@ -36,20 +44,33 @@ function gotoPage(pageid){
     if(currentTab != i){
       tabs[i].children[1].style.width = "0";
       tabs[i].children[0].style.color = "white";
+      tabs[i].style.fontSize = "1.8vmax";
+    }
+    else{
+      tabs[i].style.fontSize = "2.1vmax";
+    }
+  }
+
+  for(i = tabs.length; i < altabs.length+tabs.length; i++){
+    if(currentTab != i){
+      altabs[i-tabs.length].children[0].style.color = "white";
+    }
+    else{
+      altabs[i-tabs.length].children[0].style.color = "rgb(191, 64, 191)";
     }
   }
 }
 
-function te(id, n, element, px){
+function te(id, n, element, sz){
   var element = element.children;
 
   if(id != currentTab)
   {
     if(n == 1){
       element[0].style.transform = "rotateY(180deg) rotateY(180deg)";
-      element[1].style.width = px;
+      element[1].style.width = sz;
     }
-    else if(n == 0){
+    else{
       element[0].style.transform = "rotateY(-180deg) rotateY(180deg)";
       element[1].style.width = "0";
     }
@@ -57,5 +78,17 @@ function te(id, n, element, px){
   else{
     element[0].style.transform = "rotateY(0deg) rotateY(0deg)";
     element[0].style.color = "rgb(191, 64, 191)";
+  }
+}
+
+function ate(id, n, element){
+  var element = element.children[0];
+
+  if(id != currentTab)
+  {
+    if(n == 1)
+      element.style.color = "rgb(191, 64, 191)";
+    else
+      element.style.color = "white";
   }
 }
