@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
 body {
-    
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#showcase {
+#showcase{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,7 +19,7 @@ body {
     background-blend-mode: color;            
 }
  
-.btn-primary {
+.btn-primary{
     background: purple;
     color: white;
     text-transform: uppercase;
@@ -30,18 +29,18 @@ body {
     font-size: 13;
 }
 
-#showcase .showcase-container {
+#showcase .showcase-container{
     display: flex;
     flex-direction: column;
     align-items: center;
         
     }
 
-#showcase .showcase-container h2 {
+#showcase .showcase-container h2{
     font-size: 3.5rem;
 }
 
-#showcase .showcase-container p {
+#showcase .showcase-container p{
     margin: 5px 5;
     font-size: 1.1rem;
 }
