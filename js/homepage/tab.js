@@ -13,6 +13,8 @@ function gotoPage(pageid){
   var tabs = document.getElementsByClassName("tabOption");
   var altabs = document.getElementsByClassName("compOption");
 
+  ws.style.background = "rgb(30, 30, 30)";
+
   switch(pageid){
     case 1: //descobrir
       currentTab = 1;
@@ -37,6 +39,7 @@ function gotoPage(pageid){
     case -2: //login
       currentTab = 5;
       ws.innerHTML = "<object type='text/html' data='pages/auth.html' width='100%' height='100%'></object>";
+      ws.style.background = "linear-gradient(90deg, rgb(191, 64, 191), rgb(87, 8, 97))";
       break;
 
     default: //homepage
