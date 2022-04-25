@@ -36,7 +36,7 @@ function gotoPage(pageid){
 
     case -2: //login
       currentTab = 5;
-      ws.innerHTML = "<object type='text/html' data='pages/auth.html' width='100%' height='100%'></object>";
+      ws.innerHTML = "<object type='text/html' data='pages/auth/auth.html' width='100%' height='100%'></object>";
       break;
 
     default: //homepage
