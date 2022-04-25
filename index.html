@@ -4,17 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="style/initpage.css">
-  <script type="text/javascript" src="js/initpage.js"></script>
-
+  <script type="text/javascript" src="js/homepage/tab.js"></script>
+  <link rel="stylesheet" href="style/tab.css">
+   
   <title>HearMe</title>
+
 </head>
 <body>
-  <div id="initpage">
-    <div id="tooltip">Escutar agora</div>
-      <input type="image" class="initimg" src="img/indexbutton.svg" name="Play" width="120" height="120"
-      onmouseover="showTooltip(1)" onmouseout="showTooltip(0)" onclick="homepage();">
+  <span class="separator"></span>
+  <img src="img/indexbutton.svg" class="logo">
+  <div id="tabs">
+    <div onclick="gotoPage(0)" class="tabOption" onmouseover="te(0, 1, this, '4em')" onmouseleave="te(0, 0, this)">
+      <div class="tabName">Página Inicial</div>
+      <span class="underline"></span>
+    </div>
+    <div onclick="gotoPage(1)" class="tabOption" onmouseover="te(1, 1, this, '2.7em')" onmouseleave="te(1, 0, this)">
+      <div class="tabName">Descobrir</div>
+      <span class="underline"></span>
+    </div>
+    <div onclick="gotoPage(2)" class="tabOption" onmouseover="te(2, 1, this, '1.3em')" onmouseleave="te(2, 0, this)">
+      <div class="tabName">Você</div>
+      <span class="underline"></span>
+    </div>
+    <div onclick="gotoPage(3)" class="tabOption" onmouseover="te(3, 1, this, '1.6em')" onmouseleave="te(3, 0, this)">
+      <div class="tabName">Sobre</div>
+      <span class="underline"></span>
+    </div>
+    <div onclick="gotoPage(-1)" class="compOption" onmouseover="ate(4, 1, this)" onmouseleave="ate(4, 0, this)">
+      <div class="tabName">Ajuda</div>
+    </div>
+    <div onclick="gotoPage(-2)" class="compOption" onmouseover="ate(5, 1, this)" onmouseleave="ate(5, 0, this)">
+      <div class="tabName">Se Inscrever / Entrar</div>
+    </div>
   </div>
+  <div id="workablescreen"></div>
 </body>
 </html>
