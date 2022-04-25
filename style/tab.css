@@ -33,8 +33,19 @@ body, html {
   padding-top: 1vmax;
 }
 
+.compOption{
+  font-family:'Stint Ultra Condensed';
+  color: white;
+  font-size: 1.5vmax;
+  cursor: pointer;
+  height: 4.4vmax;
+  float: right;
+  padding-right: 2vmax;
+  padding-top: 1.2vmax;
+}
+
 .tabName{
-  transition-property: transform, color;
+  transition-property: transform, color, font-size;
   transition-duration: .3s;
 }
 
@@ -52,7 +63,8 @@ body, html {
   padding: 0;
   border-top: solid rgb(191, 64, 191);
   width: 0px;
-  border-radius: 12px;
+  height: 7px;
+  border-radius: 1px;
   position: absolute;
   transition-timing-function: ease-out;
   transform-origin: center right;
