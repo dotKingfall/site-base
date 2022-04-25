@@ -29,21 +29,21 @@ function gotoPage(pageid){
       ws.innerHTML = "<object type='text/html' data='pages/sobre.html' width='100%' height='100%'></object>";
       break;
 
-    case -1: //login
+    case -1: //ajuda
       currentTab = 4;
-      ws.innerHTML = "<object type='text/html' data='pages/auth.html' width='100%' height='100%'></object>";
+      ws.innerHTML = "<object type='text/html' data='pages/help.html' width='100%' height='100%'></object>";
       break;
 
-    case -2: //ajuda
+    case -2: //login
       currentTab = 5;
-      ws.innerHTML = "<object type='text/html' data='pages/help.html' width='100%' height='100%'></object>";
+      ws.innerHTML = "<object type='text/html' data='pages/auth.html' width='100%' height='100%'></object>";
       break;
 
     default: //homepage
       currentTab = 0;
       ws.innerHTML = "<object data='pages/homepage.html' width='100%' height='100%'></object>";
       break;
-    }
+  }
 
   for(i = 0; i < tabs.length; i++){
     if(currentTab != i){
