@@ -1,11 +1,14 @@
 <link rel="stylesheet" href="../style/auth/auth.css">
+<script type="text/javascript" src="../js/auth/auth.js"></script>
 
-<form action="verify()">
-  <label for="name">Nome de usário ou e-mail:</label><br>
-  <input type="text" id="uid" name="name" maxlength="40"><br>
-
-  <label for="pw">Senha:</label><br>
-  <input type="password" id="uid_pw" name="pw" maxlength="30"><br><br>
-
-  <input type="submit" value="Continuar">
-</form>
+<div id="limit">
+  <form onsubmit="verify()">
+    <label for="name">Nome de usário ou e-mail:</label><br>
+    <input type="text" id="uid" name="name" maxlength="80"><br>
+  
+    <label for="pw">Senha:</label><br>
+    <input type="password" id="uid_pw" name="pw" maxlength="50"><br><br>
+  
+    <input type="submit" value="Continuar">
+  </form>
+</div>
