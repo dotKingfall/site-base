@@ -7,7 +7,11 @@
     <input type="text" id="uid" name="name" maxlength="80"><br>
   
     <label for="pw">Senha:</label><br>
-    <input type="password" id="uid_pw" name="pw" maxlength="50"><br><br>
+    <div class="pwfield">
+      <input type="password" id="uid_pw" name="pw" maxlength="50">
+      <img src="../img/auth/closed-eye.svg" class="seepwbutton" onclick="pwvisibility(this)">
+    </div>
+    <br><br>
   
     <input type="submit" value="Continuar">
   </form>
