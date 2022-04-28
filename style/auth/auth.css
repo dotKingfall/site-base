@@ -1,12 +1,31 @@
+#limit{
+  margin-left: 34vw;
+}
+
 label{
   color: white;
-}
-.pwfield{
-  display: inline;
+  font-size: large;
+  opacity: 75%;
+  margin-left: 15px;
 }
 
 .seepwbutton{
-  width: 15px;
+  width: 25px;
   height: 15px;
+  margin-left: 10px;
+  transform: scale(1.1);
   cursor: pointer;
+}
+
+#uid, #uid_pw{
+  background: linear-gradient(rgb(250, 249, 246), rgb(249, 246, 238));
+  border: none;
+  outline: none;
+  color: rgb(191, 64, 191);
+
+  border-radius: 30px;
+  text-align: center;
+  font-size: large;
+  height: 50px;
+  width: 320px;
 }
