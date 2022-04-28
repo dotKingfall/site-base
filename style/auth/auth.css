@@ -17,6 +17,11 @@ label{
   cursor: pointer;
 }
 
+.subbutton{
+  color: white;
+  background-color: red;
+}
+
 #uid, #uid_pw{
   background: linear-gradient(rgb(250, 249, 246), rgb(249, 246, 238));
   border: none;
