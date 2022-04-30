@@ -1,27 +1,3 @@
-window.onload = function(){
-  screenSize();
-}
-
-function screenSize(){
-  var w = document.documentElement.clientWidth;
-  var h = document.documentElement.clientHeight;
-
-  if(w >= h) return;
-  else{
-    var namefield = document.getElementById("uid");
-    var pwfield = document.getElementById("uid_pw");
-
-    document.getElementById("limit").style.marginLeft = "29vw";
-
-    namefield.style.height = "35px"; 
-    pwfield.style.height = "35px";
-    namefield.style.width = "200px"; 
-    pwfield.style.width = "200px";
-  }
-}
-
-window.addEventListener("resize", screenSize);
-
 function verify(){
   username = document.getElementById("uid");
   password = document.getElementById("uid_pw");
