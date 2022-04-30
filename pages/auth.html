@@ -3,17 +3,14 @@
 
 <div id="limit">
   <form onsubmit="verify()">
-    <label for="name">Nome de usário ou e-mail:</label><br>
     <div class="inputOutline">
+      <label for="name">Nome de usário ou e-mail:</label><br>
       <input type="text" id="uid" name="name" maxlength="80" style="text-overflow: ellipsis;">
-    </div>
-    <br>
-  
-    <label for="pw">Senha:</label><br>
-    <div class="inputOutline">
+      <br><br><br>
+      <label for="pw">Senha:</label><br>
       <input type="password" id="uid_pw" name="pw" maxlength="50">
-      <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this)">
     </div>
+    <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this)">
     <br><br>
   
     <input type="submit" value="Continuar" class="subbutton">
