@@ -2,16 +2,29 @@
 <script type="text/javascript" src="../js/auth/auth.js"></script>
 
 <div id="limit">
-  <form onsubmit="verify()">
-    <div class="inputOutline">
-      <input type="text" id="uid" name="name" maxlength="80" placeholder="Nome de usuário / E-mail" style="text-overflow: ellipsis;">
-      <br><br>
-      <input type="password" id="uid_pw" name="pw" maxlength="50" placeholder="Senha">
-      <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this)">
-      <br>
-      <button type="submit" class="subbutton">
-        Continuar
-      </button>
-    </div>
-  </form>
+  <table>
+    <tr>
+      <th>
+        <form onsubmit="verify()">
+          <input type="text" class="fields" id="uid" name="name" maxlength="80" placeholder="Nome de usuário / E-mail" style="text-overflow: ellipsis;">
+            <br><br>
+            <input type="password" class="fields" id="uid_pw" name="pw" maxlength="50" placeholder="Senha">
+            <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this)">
+            <br>
+            <button type="submit" class="subbutton">Entrar</button>
+        </form>
+      </th>
+      <th>
+        <form onsubmit="newaccount()" class="newacc">
+          <input type="text" class="fields" id="newuid" name="name" maxlength="80" placeholder="E-mail" style="text-overflow: ellipsis;">
+          <br><br>
+          <input type="password" class="fields" id="newpw" name="pw" maxlength="50" placeholder="Senha">
+          <br><br>
+          <input type="password" class="fields" id="cpw" name="pw" maxlength="50" placeholder="Confirmar senha">
+          <br>
+          <button type="submit">Se Cadastrar</button>
+        </form>
+      </th>
+    </tr>
+  </table>
 </div>
