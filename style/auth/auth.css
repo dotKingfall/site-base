@@ -1,3 +1,8 @@
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .seepwbutton{
   width: 25px;
   height: 15px;
@@ -10,11 +15,15 @@
 
 .subbutton{
   color: white;
-  background-color: red;
+  background: linear-gradient(90deg, rgb(191, 64, 191), rgb(87, 8, 97));
   text-align: center;
 }
 
-#uid, #uid_pw{
+.newacc{
+  margin-left: 50px;
+}
+
+.fields{
   background: linear-gradient(rgb(250, 249, 246), rgb(249, 246, 238));
   border: none;
   outline: none;
@@ -26,12 +35,6 @@
   font-size: medium;
   height: 2.8em;
   width: 16em;
-}
-
-.inputOutline{
-  text-align: center;
-}
-
-#limit{
-  margin-top: 5%;
+  padding-left: 7px;
+  padding-right: 7px;
 }
