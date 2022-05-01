@@ -5,6 +5,12 @@ function verify(){
   alert(`Usuário: ${username.value}\nSenha: ${password.value}`);
 }
 
+function newaccount(){
+  username = document.getElementById("newuid");
+  password = document.getElementById("newpw");
+  confirm_password = document.getElementById("cpw");
+}
+
 var pwvis = false;
 function pwvisibility(element){
   if(pwvis == false){
