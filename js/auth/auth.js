@@ -11,6 +11,11 @@ function newaccount(){
   confirm_password = document.getElementById("cpw");
 }
 
+function createaccbutton(){
+  document.getElementById("fst").style.display = "none";
+  document.getElementById("scd").style.visibility = "visible";
+}
+
 var pwvis = false;
 function pwvisibility(element){
   if(pwvis == false){
