@@ -1,30 +1,25 @@
 <link rel="stylesheet" href="../style/auth/auth.css">
 <script type="text/javascript" src="../js/auth/auth.js"></script>
 
-<div id="limit">
-  <table>
-    <tr>
-      <th>
-        <form onsubmit="verify()">
-          <input type="text" class="fields" id="uid" name="name" maxlength="80" placeholder="Nome de usuário / E-mail" style="text-overflow: ellipsis;">
-            <br><br>
-            <input type="password" class="fields" id="uid_pw" name="pw" maxlength="50" placeholder="Senha">
-            <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this)">
-            <br>
-            <button type="submit" class="subbutton">Entrar</button>
-        </form>
-      </th>
-      <th>
-        <form onsubmit="newaccount()" class="newacc">
-          <input type="text" class="fields" id="newuid" name="name" maxlength="80" placeholder="E-mail" style="text-overflow: ellipsis;">
-          <br><br>
-          <input type="password" class="fields" id="newpw" name="pw" maxlength="50" placeholder="Senha">
-          <br><br>
-          <input type="password" class="fields" id="cpw" name="pw" maxlength="50" placeholder="Confirmar senha">
-          <br>
-          <button type="submit">Se Cadastrar</button>
-        </form>
-      </th>
-    </tr>
-  </table>
+<div style="text-align: center;">
+  <form onsubmit="verify()" id="fst" name="enteraccount">
+    <input type="text" class="fields" id="uid" name="name" maxlength="80" placeholder="Nome de usuário / E-mail" style="text-overflow: ellipsis;">
+    <br>
+    <input type="password" class="fields" id="uid_pw" name="pw" maxlength="50" placeholder="Senha">
+    <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this)">
+    <br>
+    <div>
+      <button type="submit" class="subbutton" form="enteraccount">Entrar</button>
+      <button class="newaccbutton" type="reset" onclick="createaccbutton()">Se cadastrar</button>
+    </div>
+  </form>
+  <form onsubmit="newaccount()" id="scd" style="visibility: hidden;" name="createaccount">
+    <input type="text" class="fields" id="newuid" name="name" maxlength="80" placeholder="E-mail" style="text-overflow: ellipsis;">
+    <br>
+    <input type="password" class="fields" id="newpw" name="pw" maxlength="50" placeholder="Senha"> 
+    <br>
+    <input type="password" class="fields" id="cpw" name="confirmpw" maxlength="50" placeholder="Confirmar senha">
+    <br>
+    <button type="submit" form="createaccount">Se Cadastrar</button>
+  </form>
 </div>
