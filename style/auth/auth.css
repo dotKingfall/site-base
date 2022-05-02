@@ -1,6 +1,5 @@
-table{
-  margin-left: auto;
-  margin-right: auto;
+form{
+  margin-top: 5%;
 }
 
 .seepwbutton{
@@ -17,10 +16,20 @@ table{
   color: white;
   background: linear-gradient(90deg, rgb(191, 64, 191), rgb(87, 8, 97));
   text-align: center;
+  cursor: pointer;
 }
 
-.newacc{
-  margin-left: 50px;
+.newaccbutton{
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.newaccbutton:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 .fields{
@@ -30,7 +39,7 @@ table{
   color: rgb(191, 64, 191);
   margin-bottom: 20px;
 
-  border-radius: 30px;
+  border-radius: 10px;
   text-align: center;
   font-size: medium;
   height: 2.8em;
