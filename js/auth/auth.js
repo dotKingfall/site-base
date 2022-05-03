@@ -9,13 +9,18 @@ function checkpw(){
   username = document.getElementById("newuid");
   password = document.getElementById("newpw");
   confirm_password = document.getElementById("cpw");
+  msg = document.getElementById("cpwmessage");
 
-  if(password.value === confirm_password.value){}
+  if(password.value === confirm_password.value)
+    alert(`Usuário: ${username.value}\nSenha: ${password.value}\nConfirmar Senha: ${confirm_password.value}`);
   else{
-    //ajeitar essa desgraça
+    msg.innerText = "Senhas não iguais";
+    msg.style.opacity = "100%";
+    msg.style.visibility = "visible";
     confirm_password.style.animationPlayState = "running";
+    setTimeout(function(){confirm_password.style.animationPlayState = "paused";}, 200);
+    setTimeout(function(){msg.style.opacity = "0"; msg.style.visibility = "hidden";}, 2000);
   }
-  //alert(`Usuário: ${username.value}\nSenha: ${password.value}\nConfirmar Senha: ${confirm_password.value}`);
 }
 
 function createaccbutton(){
