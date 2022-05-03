@@ -6,7 +6,7 @@
     <input type="text" class="fields" id="uid" name="name" maxlength="80" placeholder="Nome de usuário / E-mail" style="text-overflow: ellipsis;">
     <br>
     <input type="password" class="fields" id="uid_pw" name="pw" maxlength="50" placeholder="Senha">
-    <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this)">
+    <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this, 1)">
     <br>
     <div>
       <button type="submit" class="subbutton" form="enteraccount">Entrar</button>
@@ -19,6 +19,7 @@
     <input type="password" class="fields" id="newpw" name="pw" maxlength="50" placeholder="Senha"> 
     <br>
     <input type="password" class="fields" id="cpw" name="confirmpw" maxlength="50" placeholder="Confirmar senha">
+    <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this, 2)">
     <br>
     <button type="submit" form="createaccount">Se Cadastrar</button>
   </form>
