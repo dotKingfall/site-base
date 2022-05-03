@@ -2,14 +2,14 @@
 <script type="text/javascript" src="../js/auth/auth.js"></script>
 
 <div style="text-align: center;">
-  <form onsubmit="verify()" id="fst" name="enteraccount">
+  <form id="fst" name="enteraccount">
     <input type="text" class="fields" id="uid" name="name" maxlength="80" placeholder="Nome de usuário / E-mail" style="text-overflow: ellipsis;">
     <br>
     <input type="password" class="fields" id="uid_pw" name="pw" maxlength="50" placeholder="Senha">
     <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this, 1)">
     <br>
     <div>
-      <button type="submit" class="subbutton" form="enteraccount">Entrar</button>
+      <button type="submit" class="subbutton" form="enteraccount" onclick="verify()">Entrar</button>
       <button class="newaccbutton" type="reset" onclick="createaccbutton()">Se cadastrar</button>
     </div>
   </form>
