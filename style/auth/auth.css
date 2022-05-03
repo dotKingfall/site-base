@@ -13,10 +13,15 @@ form{
 }
 
 .subbutton{
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
   color: white;
-  background: linear-gradient(90deg, rgb(191, 64, 191), rgb(87, 8, 97));
+  background-color: black;
   text-align: center;
   cursor: pointer;
+  width: 12em;
+  height: 2em;
 }
 
 .newaccbutton{
@@ -46,4 +51,17 @@ form{
   width: 16em;
   padding-left: 7px;
   padding-right: 7px;
+}
+
+#cpw{
+  animation: shake .18s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes shake{
+  15%{transform: translateX(6px);}
+  35%{transform: translateX(-6px);}
+  55%{transform: translateX(6px);}
+  75%{transform: translateX(-6px);}
+  90%{transform: translateX(6px);}
 }
