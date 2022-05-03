@@ -18,9 +18,10 @@
     <br>
     <input type="password" class="fields" id="newpw" name="pw" maxlength="50" placeholder="Senha"> 
     <br>
+    <span style="z-index: 2;" id="cpwmessage"></span>
     <input type="password" class="fields" id="cpw" name="confirmpw" maxlength="50" placeholder="Confirmar senha">
     <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this, 2)">
     <br>
-    <button type="submit" form="createaccount" onclick="checkpw()">Se Cadastrar</button>
+    <button type="submit" form="createaccount" class="subbutton" onclick="checkpw()">Se Cadastrar</button>
   </form>
 </div>
