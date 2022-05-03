@@ -39,11 +39,11 @@ form{
 
 .fields{
   background: linear-gradient(rgb(250, 249, 246), rgb(249, 246, 238));
+  position: relative;
   border: none;
   outline: none;
   color: rgb(191, 64, 191);
   margin-bottom: 20px;
-
   border-radius: 10px 5px 10px 5px;
   text-align: center;
   font-size: medium;
@@ -58,10 +58,25 @@ form{
   animation-play-state: paused;
 }
 
+#cpwmessage{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .8s;
+  transition-timing-function: ease-in;
+  top: 30%;
+  padding: 3px;
+
+  color: rgba(255, 255, 255, .95);
+  background-color: rgb(115, 39, 115);
+  border-radius: 5px;
+}
+
 @keyframes shake{
-  15%{transform: translateX(6px);}
-  35%{transform: translateX(-6px);}
-  55%{transform: translateX(6px);}
-  75%{transform: translateX(-6px);}
-  90%{transform: translateX(6px);}
+  0%{transform: translateX(0px);}
+  20%{transform: translateX(2px);}
+  40%{transform: translateX(-2px);}
+  60%{transform: translateX(2px);}
+  80%{transform: translateX(-2px);}
+  100%{transform: translateX(0px);}
 }
