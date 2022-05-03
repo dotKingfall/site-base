@@ -39,7 +39,7 @@ form{
   color: rgb(191, 64, 191);
   margin-bottom: 20px;
 
-  border-radius: 10px;
+  border-radius: 10px 5px 10px 5px;
   text-align: center;
   font-size: medium;
   height: 2.8em;
