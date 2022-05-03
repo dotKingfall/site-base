@@ -17,15 +17,17 @@ function createaccbutton(){
 }
 
 var pwvis = false;
-function pwvisibility(element){
+function pwvisibility(element, o){
   if(pwvis == false){
-    document.getElementById("uid_pw").type = "text";
+    if(o == 1) document.getElementById("uid_pw").type = "text";
+    else document.getElementById("cpw").type = "text";
     element.src = "../img/auth/closed-eye.svg";
     element.style.transform = "scale(1.25) translateY(79%)";
     pwvis = true;
   }
   else{
-    document.getElementById("uid_pw").type = "password";
+    if(o == 1) document.getElementById("uid_pw").type = "password";
+    else document.getElementById("cpw").type = "password";
     element.src = "../img/auth/open-eye.svg";
     element.style.transform = "scale(1.1) translateY(90%)";
     pwvis = false;
