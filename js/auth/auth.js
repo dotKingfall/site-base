@@ -5,10 +5,17 @@ function verify(){
   alert(`Usuário: ${username.value}\nSenha: ${password.value}`);
 }
 
-function newaccount(){
+function checkpw(){
   username = document.getElementById("newuid");
   password = document.getElementById("newpw");
   confirm_password = document.getElementById("cpw");
+
+  if(password.value === confirm_password.value){}
+  else{
+    //ajeitar essa desgraça
+    confirm_password.style.animationPlayState = "running";
+  }
+  //alert(`Usuário: ${username.value}\nSenha: ${password.value}\nConfirmar Senha: ${confirm_password.value}`);
 }
 
 function createaccbutton(){
