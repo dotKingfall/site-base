@@ -13,7 +13,7 @@
       <button class="newaccbutton" type="reset" onclick="createaccbutton()">Se cadastrar</button>
     </div>
   </form>
-  <form onsubmit="newaccount()" id="scd" style="visibility: hidden;" name="createaccount">
+  <form id="scd" style="visibility: hidden;" name="createaccount">
     <input type="text" class="fields" id="newuid" name="name" maxlength="80" placeholder="E-mail" style="text-overflow: ellipsis;">
     <br>
     <input type="password" class="fields" id="newpw" name="pw" maxlength="50" placeholder="Senha"> 
@@ -21,6 +21,6 @@
     <input type="password" class="fields" id="cpw" name="confirmpw" maxlength="50" placeholder="Confirmar senha">
     <img src="../img/auth/open-eye.svg" class="seepwbutton" onclick="pwvisibility(this, 2)">
     <br>
-    <button type="submit" form="createaccount">Se Cadastrar</button>
+    <button type="submit" form="createaccount" onclick="checkpw()">Se Cadastrar</button>
   </form>
 </div>
