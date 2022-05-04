@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
 #player{
   position: absolute;
   background: black;
@@ -6,4 +8,12 @@
   border-radius: 4px 4px 0px 0px;
   width: 99.99%;
   transition: height .4s;
+}
+
+.nomusic{
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 28px;
+  font-family:'Stint Ultra Condensed';
 }
