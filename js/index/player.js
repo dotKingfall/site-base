@@ -1,3 +1,8 @@
+var musicPlaying = false; //Se alguma música estiver tocando, essa variável deve ser true
+function playsong(){
+  //
+}
+
 var player_active = false;
 function showPlayer(){
   ple = document.getElementById("player");
