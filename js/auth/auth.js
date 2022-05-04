@@ -5,6 +5,7 @@ function checklogin(){
   alert(`Usuário: ${username.value}\nSenha: ${password.value}`);
 }
 
+var animRunning = false;
 function checkpw(){
   username = document.getElementById("newuid");
   password = document.getElementById("newpw");
@@ -19,12 +20,15 @@ function checkpw(){
   else showMsg("Senhas não iguais");
 
   function showMsg(msgtxt){
-    msg.innerText = msgtxt;
-    msg.style.opacity = "100%";
-    msg.style.visibility = "visible";
-    confirm_password.style.animationPlayState = "running";
-    setTimeout(function(){confirm_password.style.animationPlayState = "paused";}, 200);
-    setTimeout(function(){msg.style.opacity = "0"; msg.style.visibility = "hidden";}, 1500);
+    if(animRunning == false){
+      animRunning = true;
+      msg.innerText = msgtxt;
+      msg.style.opacity = "100%";
+      msg.style.visibility = "visible";
+      confirm_password.style.animationPlayState = "running";
+      setTimeout(function(){confirm_password.style.animationPlayState = "paused";}, 200);
+      setTimeout(function(){msg.style.opacity = "0"; msg.style.visibility = "hidden"; animRunning = false;}, 1500);
+    }
   }
 }
 
