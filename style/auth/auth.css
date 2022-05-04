@@ -71,6 +71,11 @@ form{
   border-radius: 5px;
 }
 
+#limit{
+  overflow: hidden;
+  height: 100%;
+}
+
 @keyframes shake{
   0%{transform: translateX(0px);}
   20%{transform: translateX(2px);}
