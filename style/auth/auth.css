@@ -43,7 +43,7 @@ form{
   border: none;
   outline: none;
   color: rgb(191, 64, 191);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 10px 5px 10px 5px;
   text-align: center;
   font-size: medium;
@@ -62,9 +62,8 @@ form{
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .8s;
+  transition: opacity .5s;
   transition-timing-function: ease-in;
-  top: 30%;
   padding: 3px;
 
   color: rgba(255, 255, 255, .95);
