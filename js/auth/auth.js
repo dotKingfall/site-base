@@ -1,4 +1,4 @@
-function verify(){
+function checklogin(){
   username = document.getElementById("uid");
   password = document.getElementById("uid_pw");
 
@@ -12,7 +12,10 @@ function checkpw(){
   msg = document.getElementById("cpwmessage");
 
   if(password.value === confirm_password.value)
-    {if(password.value.length < 8) showMsg("Menos de 8 caracteres");}
+  {
+    if(password.value.length < 8) showMsg("Menos de 8 caracteres");
+    else alert(`Usuário: ${username.value}\nSenha: ${password.value}\nConf_senha: ${confirm_password.value}`);
+  }
   else showMsg("Senhas não iguais");
 
   function showMsg(msgtxt){
@@ -21,7 +24,7 @@ function checkpw(){
     msg.style.visibility = "visible";
     confirm_password.style.animationPlayState = "running";
     setTimeout(function(){confirm_password.style.animationPlayState = "paused";}, 200);
-    setTimeout(function(){msg.style.opacity = "0"; msg.style.visibility = "hidden";}, 2000);
+    setTimeout(function(){msg.style.opacity = "0"; msg.style.visibility = "hidden";}, 1500);
   }
 }
 
