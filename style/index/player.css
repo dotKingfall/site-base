@@ -2,7 +2,7 @@
   position: absolute;
   background: black;
   bottom: 0%;
-  height: 90px;
+  height: 0px;
   border-radius: 4px 4px 0px 0px;
   width: 99.99%;
   transition: height .4s;
