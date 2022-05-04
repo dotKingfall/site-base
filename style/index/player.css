@@ -1,4 +1,14 @@
 #player{
   position: absolute;
+  background: black;
+  /*bottom: -15%;*/
   bottom: 0%;
+  height: 90px;
+  width: 99.55%;
+  transition: bottom .4s;
+
+  border-radius: 3px 3px 0px 0px;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-left: 3px solid red;
 }
