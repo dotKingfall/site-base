@@ -6,7 +6,7 @@ function showPlayer(){
     player_active = true;
   }
   else{
-    ple.style.bottom = "-15%";
+    ple.style.bottom = "-16%";
     player_active = false;
   }
 }
