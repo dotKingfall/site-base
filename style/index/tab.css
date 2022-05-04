@@ -26,6 +26,7 @@ body, html {
   letter-spacing: 1px;
   font-size: 1.8vmax;
   cursor: pointer;
+  height: 45px;
   float: left;
   padding-left: 2vmax;
   padding-top: 1vmax;
