@@ -1,14 +1,10 @@
 #player{
   position: absolute;
   background: black;
-  /*bottom: -16%;*/
-  bottom: 0%;
+  /*bottom: 0%;*/
+  bottom: -15%;
   height: 90px;
-  width: 99.55%;
+  border-radius: 4px 4px 0px 0px;
+  width: 99.99%;
   transition: bottom .4s;
-
-  border-radius: 3px 3px 0px 0px;
-  border-width: 3px;
-  border-style: solid;
-  border-image: linear-gradient(to top, rgb(191, 64, 191), transparent) 1 100%;
 }
