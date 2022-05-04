@@ -17,9 +17,8 @@ body{
 
 .initimg{
   margin-top: 55px;
-  --gstart: 0deg;
   border: 1vmin solid;
-  border-image: conic-gradient(from var(--gstart), rgb(179, 102, 204), rgb(191, 64, 191), rgb(60, 40, 80)) 1;
+  border-image: conic-gradient(from 0deg, rgb(179, 102, 204), rgb(191, 64, 191), rgb(60, 40, 80)) 1;
   animation: 9s gradient linear infinite;
   transition-property: box-shadow, background-color;
   transition-duration: 1s;
