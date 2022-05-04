@@ -73,6 +73,7 @@ body, html {
   height: 4.4vmax;
   width: 4.2vmax;
   background-color: black;
+  cursor: pointer;
   margin: 0;
   padding: 0;
   float: left;
