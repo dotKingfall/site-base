@@ -12,9 +12,11 @@ function checkpw(){
   msg = document.getElementById("cpwmessage");
 
   if(password.value === confirm_password.value)
-    alert(`Usuário: ${username.value}\nSenha: ${password.value}\nConfirmar Senha: ${confirm_password.value}`);
-  else{
-    msg.innerText = "Senhas não iguais";
+    {if(password.value.length < 8) showMsg("Menos de 8 caracteres");}
+  else showMsg("Senhas não iguais");
+
+  function showMsg(msgtxt){
+    msg.innerText = msgtxt;
     msg.style.opacity = "100%";
     msg.style.visibility = "visible";
     confirm_password.style.animationPlayState = "running";
