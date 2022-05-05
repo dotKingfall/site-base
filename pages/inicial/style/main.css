@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: url(../helpers/bki.jpg) center center/cover;
+    background-blend-mode: color;            
+}
+ 
+.btn-primary{
+    background: purple;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 13px;
+    font-size: 13;
+}
+
+#showcase .showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+    }
+
+#showcase .showcase-container h2{
+    font-size: 3.5rem;
+}
+
+#showcase .showcase-container p{
+    margin: 5px 5;
+    font-size: 1.1rem;
+}
+
