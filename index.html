@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="js/index/tab.js"></script>
-  <script type="text/javascript" src="js/index/player.js"></script>
-  <link rel="stylesheet" href="style/index/tab.css">
-  <link rel="stylesheet" href="style/index/player.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/player.css">
    
   <title>HearMe</title>
 
 </head>
 <body>
   <span class="separator"></span>
-  <img src="img/indexbutton.svg" class="logo" onclick="showPlayer(); playsong()">
+  <img src="helpers/indexbutton.svg" class="logo" onclick="showPlayer(); playsong()">
   <div id="tabs">
     <div onclick="gotoPage(0)" class="tabOption" onmouseover="te(0, 1, this, '4em')" onmouseleave="te(0, 0, this)">
       <div class="tabName">Página Inicial</div>
@@ -40,10 +40,12 @@
     </div>
   </div>
 
+  <audio id="song" src="tmpexample.mp3"></audio>
+
   <div id="workablescreen"></div>
 
   <span id="playerws">
-    <audio id="player" src="tmpexample.mp3"></audio>
+    <!--<input src="">-->
   </span>
 </body>
 </html>
