@@ -5,7 +5,7 @@ function playsong(){
 
 var player_active = false;
 function showPlayer(){
-  ple = document.getElementById("player");
+  ple = document.getElementById("playerws");
   if(player_active == false){
     ple.style.height = "90px";
     player_active = true;
