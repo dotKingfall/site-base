@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
 
 #playerws{
-  position: absolute;
+  position: fixed;
+  z-index: 10;
   background: black;
-  bottom: 0%;
-  height: 90px;
-  border-radius: 4px 4px 0px 0px;
-  width: 99.99%;
-  transition: height .4s;
+  height: 100%;
+  width: 180px;
+  top: 4.4vmax;
+  transition: width .4s;
+  border-width: medium;
+  border-radius: 0px 4px 4px 0px;
+}
+
+#playbutton{
+  width: 35px;
+  height: 35px;
+}
+
+.controls{
+  text-align: center;
 }
