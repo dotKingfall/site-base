@@ -3,20 +3,21 @@
 #playerws{
   position: fixed;
   z-index: 10;
-  background: black;
+  background: rgb(30, 30, 30);
   height: 100%;
   width: 180px;
   top: 4.4vmax;
-  transition: width .4s;
+  transition: transform .4s, visibility .4s;
   border-width: medium;
   border-radius: 0px 4px 4px 0px;
+}
+
+#album_cover{
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #playbutton{
   width: 35px;
   height: 35px;
-}
-
-.controls{
-  text-align: center;
 }
