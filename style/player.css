@@ -14,9 +14,20 @@
   border-radius: 0px 4px 4px 0px;
 }
 
-#song_name{
-  padding: 0px 10px 0px 10px;
+#name_container{
+  padding: 5px 10px 0px 5px;
+  width: 160px;
   color: white;
+  font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+#song_name{
+  text-align: center;
+  animation: songtitle 5s linear infinite;
+  animation-play-state: paused;
 }
 
 #album_cover{
@@ -27,4 +38,10 @@
 #playbutton{
   width: 35px;
   height: 35px;
+}
+
+@keyframes songtitle {
+  to{
+    transform: translateX(-90%);
+  }
 }
