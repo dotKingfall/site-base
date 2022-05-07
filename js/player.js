@@ -28,7 +28,7 @@ function copysongname(){
     if(copymessage.innerText === "COPIAR") copymessage.innerText = "COPIADO!";
   })
   .catch(() => {
-    if(copymessage.innerText === "COPIAR") copymessage.innerText = "NÃO COPIADO!";
+    if(copymessage.innerText === "COPIAR") copymessage.innerText = "NÃO COPIADO! (MOBILE)";
   });
   setTimeout(function (){copymessage.innerText = "COPIAR"}, 2000);
 }
