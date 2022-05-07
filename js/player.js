@@ -1,3 +1,13 @@
+var songname = "None";
+var singer = "None";
+var lyricswriter = "None";
+var date = "None";
+var vocalprod = "None";
+var copyright = "None";
+var distributor = "None";
+
+//SONG INFO END
+
 var musicPlaying = false; //Se alguma música estiver tocando, essa variável deve ser true
 function playsong(c, n = 0){
   if(c == 1){}
@@ -15,9 +25,8 @@ function shouldOverflow(){
 }
 
 function copysongname(){
-  var songname = document.getElementById("song_name");
   var copymessage = document.getElementById("copybutton").children[1];
-  navigator.clipboard.writeText(songname.innerText);
+  navigator.clipboard.writeText(`${songname} - ${singer}`);
 
   if(copymessage.innerText === "COPIAR"){
     copymessage.innerText = "COPIADO!";
