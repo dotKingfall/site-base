@@ -10,11 +10,13 @@ var player_active = false;
 function showPlayer(){
   ple = document.getElementById("playerws");
   if(player_active == false){
-    ple.style.width = "180px";
+    ple.style.transform = "translateX(0px)";
+    ple.style.visibility = "visible";
     player_active = true;
   }
   else{
-    ple.style.width = "0px";
+    ple.style.transform = "translateX(-180px)";
+    ple.style.visibility = "hidden";
     player_active = false;
   }
 }
