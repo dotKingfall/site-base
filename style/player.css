@@ -15,8 +15,10 @@
 }
 
 #name_container{
-  padding: 5px 10px 0px 5px;
-  width: 160px;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-left: 6px;
+  width: 168px;
   color: white;
   font-size: 28px;
   white-space: nowrap;
@@ -25,8 +27,8 @@
 }
 
 #song_name{
-  text-align: center;
-  animation: songtitle 5s linear infinite;
+  width: min-content;
+  animation: songtitle 8s linear infinite;
   animation-play-state: paused;
 }
 
@@ -42,6 +44,6 @@
 
 @keyframes songtitle {
   to{
-    transform: translateX(-90%);
+    transform: translateX(-100%);
   }
 }
