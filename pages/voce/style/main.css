@@ -74,13 +74,6 @@ header .menu_side .playlist h4 span::before {
   top: -4px;
   transition: .3s linear;
 }
-header .menu_side .playlist h4 span::before {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  border: 2px solid #4c5262;
-  border-radius: 50%;
-  top: -4px;
-  transition: .3s linear;
+header .menu_side .playlist h4:hover span::before {
+  border: 2px solid #fff;
 }
