@@ -53,6 +53,7 @@
   transition: color .2s;
   transition-timing-function: ease-out;
 }
+
 #copybutton img{
   filter: grayscale(100%);
   transition: filter .2s;
@@ -64,6 +65,27 @@
 
 #copybutton:hover{
   color: rgb(191, 64, 191);
+}
+
+#seek-slider{
+  margin-top: 5px;
+  float: left;
+  width: 100%;
+}
+
+.duration, .current{
+  opacity: 70%;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.duration{
+  float: right;
+}
+
+.current{
+  float: left
 }
 
 @keyframes songtitle {
