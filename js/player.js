@@ -23,7 +23,19 @@ function shouldOverflow(){
 }
 
 function copysongname(){
-  navigator.clipboard.writeText("aaaa");
+  var copymessage = document.getElementById("copybutton").children[1];
+  await navigator.clipboard.writeText(`${songname} - ${singer}`).then(() => {
+    if(copymessage.innerText === "COPIAR"){
+      copymessage.innerText = "COPIADO!";
+      setTimeout(function (){copymessage.innerText = "COPIAR"}, 2000);
+    }
+  })
+  .catch(() => {
+    if(copymessage.innerText === "COPIAR"){
+      copymessage.innerText = "NÃO COPIADO! (MOBILE)";
+      setTimeout(function (){copymessage.innerText = "COPIAR"}, 2000);
+    }
+  });
 }
 
 var player_active = false;
