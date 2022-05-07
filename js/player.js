@@ -5,15 +5,13 @@ var date = "None";
 var vocalprod = "None";
 var copyright = "None";
 var distributor = "None";
+var duration = "00s";
 
 //SONG INFO END
 
 var musicPlaying = false; //Se alguma música estiver tocando, essa variável deve ser true
 function playsong(c, n = 0){
-  if(c == 1){}
-  else if(c == 2){}
-
-  if(n == 1){}
+  //
 }
 
 function shouldOverflow(){
