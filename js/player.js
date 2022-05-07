@@ -24,18 +24,13 @@ function shouldOverflow(){
 
 function copysongname(){
   var copymessage = document.getElementById("copybutton").children[1];
-  await navigator.clipboard.writeText(`${songname} - ${singer}`).then(() => {
-    if(copymessage.innerText === "COPIAR"){
-      copymessage.innerText = "COPIADO!";
-      setTimeout(function (){copymessage.innerText = "COPIAR"}, 2000);
-    }
+  navigator.clipboard.writeText(`${songname} - ${singer}`).then(() => {
+    if(copymessage.innerText === "COPIAR") copymessage.innerText = "COPIADO!";
   })
   .catch(() => {
-    if(copymessage.innerText === "COPIAR"){
-      copymessage.innerText = "NÃO COPIADO! (MOBILE)";
-      setTimeout(function (){copymessage.innerText = "COPIAR"}, 2000);
-    }
+    if(copymessage.innerText === "COPIAR") copymessage.innerText = "NÃO COPIADO!";
   });
+  setTimeout(function (){copymessage.innerText = "COPIAR"}, 2000);
 }
 
 var player_active = false;
