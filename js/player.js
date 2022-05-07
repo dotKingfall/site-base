@@ -24,7 +24,7 @@ function shouldOverflow(){
 
 function copysongname(){
   var copymessage = document.getElementById("copybutton").children[1];
-  navigator.clipboard.writeText(`${songname} - ${singer}`).then(() => {
+  await navigator.clipboard.writeText(`${songname} - ${singer}`).then(() => {
     if(copymessage.innerText === "COPIAR"){
       copymessage.innerText = "COPIADO!";
       setTimeout(function (){copymessage.innerText = "COPIAR"}, 2000);
