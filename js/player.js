@@ -48,3 +48,7 @@ function showPlayer(){
     player_active = false;
   }
 }
+
+function showtime(){
+  //
+}
