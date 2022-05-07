@@ -7,9 +7,16 @@
   height: 100%;
   width: 180px;
   top: 4.4vmax;
+  transform: translateX(-180px);
+  visibility: hidden;
   transition: transform .4s, visibility .4s;
   border-width: medium;
   border-radius: 0px 4px 4px 0px;
+}
+
+#song_name{
+  padding: 0px 10px 0px 10px;
+  color: white;
 }
 
 #album_cover{
