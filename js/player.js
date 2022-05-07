@@ -8,7 +8,10 @@ function playsong(c, n = 0){
 
 function shouldOverflow(){
   element = document.getElementById("song_name");
-  if(element.offsetWidth >= 168) element.style.animationPlayState = "running";
+  if(element.offsetWidth >= 168){
+    element.style.transform = "translateX(60%)";
+    element.style.animationPlayState = "running";
+  }
   
 }
 
