@@ -15,7 +15,6 @@
 }
 
 #name_container{
-  margin-left: auto;
   margin-top: 10px;
   margin-left: 6px;
   width: 168px;
@@ -27,6 +26,8 @@
 }
 
 #song_name{
+  margin-left: auto;
+  margin-right: auto;
   width: min-content;
   animation: songtitle 8s linear infinite;
   animation-play-state: paused;
