@@ -1,7 +1,3 @@
-window.onload = function (){
-  shouldOverflow();
-}
-
 var musicPlaying = false; //Se alguma música estiver tocando, essa variável deve ser true
 function playsong(c, n = 0){
   if(c == 1){}
@@ -11,7 +7,9 @@ function playsong(c, n = 0){
 }
 
 function shouldOverflow(){
-  element_size = document.getElementById("song_name");
+  element = document.getElementById("song_name");
+  if(element.offsetWidth >= 168) element.style.animationPlayState = "running";
+  
 }
 
 var player_active = false;
@@ -20,6 +18,7 @@ function showPlayer(){
   if(player_active == false){
     ple.style.transform = "translateX(0px)";
     ple.style.visibility = "visible";
+    shouldOverflow();
     player_active = true;
   }
   else{
